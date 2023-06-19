@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Info Sogu Webinar</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex">
+      <div id="menu" class="min-h-screen flex flex-row bg-gray-100">
+        <div class="flex flex-col w-60 rounded-r-3xl overflow-hidden">
+          <ul class="flex flex-col py-4">
+            <li>
+              <a
+                data-menu-item="start"
+                href="#"
+                class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+              >
+                <span
+                  class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+                  ><i class="bx bx-circle"></i
+                ></span>
+                <span class="text-sm font-medium">Введение</span>
+              </a>
+            </li>
+            <li>
+              <a
+                data-menu-item="registration"
+                href="#"
+                class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+              >
+                <span
+                  class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+                  ><i class="bx bx-circle"></i
+                ></span>
+                <span class="text-sm font-medium">Регистрация</span>
+              </a>
+            </li>
+            <li>
+              <a
+                data-menu-item="auth"
+                href="#"
+                class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+              >
+                <span
+                  class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+                  ><i class="bx bx-circle"></i
+                ></span>
+                <span class="text-sm font-medium">Вход в личный кабинет</span>
+              </a>
+            </li>
+            <li>
+              <a
+                data-menu-item="create-room"
+                href="#"
+                class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+              >
+                <span
+                  class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"
+                  ><i class="bx bx-circle"></i
+                ></span>
+                <span class="text-sm font-medium">Создание комнаты</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section id="info" class="p-8"></section>
+    </main>
+    <!-- Scripts -->
+    <script type="text/javascript" src="./js/constants.js"></script>
+    <script type="text/javascript" src="./js/templates/start.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/templates/registration.js"
+    ></script>
+    <script type="text/javascript" src="./js/templates/createRoom.js"></script>
+    <script type="text/javascript" src="./js/templates/auth.js"></script>
+    <script type="text/javascript" src="./js/templates/index.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
