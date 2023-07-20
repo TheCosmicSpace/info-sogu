@@ -1,7 +1,25 @@
 document.addEventListener("DOMContentLoaded", main);
 function main() {
   setTemplate(START);
+  var elem = document.querySelector('[data-menu-item="' + START + '"]');
+  setActiveItemMenu(elem);
+
   addEventToMenuItems();
+
+  // document.querySelector("#prev-lesson").addEventListener("click", toLesson);
+  // document.querySelector("#next-lesson").addEventListener("click", toLesson);
+}
+
+// function toLesson(e) {
+//   var button = e.target.closest("button");
+//   var lessonTo = button.getAttribute("data-lesson-to");
+//   console.log(">> lessonTo", lessonTo);
+// }
+
+function headerNavigation(toLesson) {
+  var elem = document.querySelector('[data-menu-item="' + toLesson + '"]');
+  setActiveItemMenu(elem);
+  setTemplate(toLesson);
 }
 
 function addEventToMenuItems() {
